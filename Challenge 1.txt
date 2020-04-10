@@ -1,0 +1,11 @@
+- A test plan:
+I will test stick to the main function first (search insurers, filter and sort,...) 
+then will follow other sub flow (elements visible check, layout responsive,...)
+
+- The tool(s) you would use to test it:
+I'm using Visual Code / Katalon for automation scripts
+I'm using Edge Chromium for browser, which is similar to Chrome
+
+- The architecture of the test scripts in that tool:
+Robot Framework / Selenium
+Java OOP
