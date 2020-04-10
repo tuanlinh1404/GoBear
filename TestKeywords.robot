@@ -362,9 +362,6 @@ Book Intro
 Move Slider
     [Arguments]  ${minValuePath}  ${maxValuePath}
 
-    ${stringMonth} =       Convert Month to UPPERCASE    ${mm}
-    ${currentMonthYear}    Get Text                      ${titlePath}
-    @{arrayMonthYear}      Split String From Right       ${currentMonthYear}
 
     :FOR    ${i}    IN RANGE    999999
     \    Exit For Loop If       

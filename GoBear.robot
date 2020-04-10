@@ -1,6 +1,6 @@
 ***Settings***
 Resource          ./TestKeywords.robot
-Suite Teardown    Suite Teardown
+#Suite Teardown    Suite Teardown
 
 ***Variables***
 ${timeout} =    10s
@@ -59,9 +59,11 @@ TC006 - Filter Insurers
     #Expand SEE MORE
     Click Item    //a[contains(text(),'SEE MORE')]//link    ${timeout}
 
-    # ${slider-name} =  Set Variable  Personal Accident
+    #Move slider (to be improve)
+    ${slider-name} =  Set Variable  Personal Accident
     # //label[contains(text(),'${slider-name}')]//following-sibling::div//b[@data-min-value]
-
+    Drag And Drop By Offset  
+    ...  //label[contains(text(),'${slider-name}')]//following-sibling::div//div[@role='slider']  50  0
 
 
 TC007 - Sort Insurers
